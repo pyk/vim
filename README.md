@@ -19,8 +19,7 @@ Copy the color schemes to `~/.vim/colors`:
 Enable the colors cheme based on your mood on the `~/.vimrc`.
 
 For example:
-   
+
     syntax on
     colorscheme green
-
 
