@@ -20,6 +20,7 @@ hi ColorColumn                     ctermbg=233
 hi Error                           ctermbg=brown
 hi CursorLine   ctermfg=black      ctermbg=green
 hi TabLine      ctermfg=darkgreen  ctermbg=bg
+hi SignColumn   ctermfg=darkgreen  ctermbg=bg
 
 " Splitter
 hi StatusLine   ctermfg=black      ctermbg=green      term=none      cterm=none
@@ -65,4 +66,3 @@ hi link SpecialChar    Special
 hi link Delimiter      Special
 hi link SpecialComment Special
 hi link Debug          Special
-
