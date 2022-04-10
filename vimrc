@@ -7,6 +7,7 @@ syntax on
 colorscheme green
 set t_Co=256
 
+
 " ████ Basic config ██████████████████████████████████████████████████████████
 
 set encoding=utf8
@@ -27,12 +28,22 @@ set tabstop=4
 
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespaces
 
-
 filetype plugin on
 filetype indent on
 
+
 " ████ Plugins  ██████████████████████████████████████████████████████████████
+
 call plug#begin()
     " Solidity support
     Plug 'tomlion/vim-solidity'
+
+    " Typescript & React support
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+
+    " General syntax checker and formatter
+    Plug 'dense-analysis/ale'
 call plug#end()
+
+
