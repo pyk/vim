@@ -41,6 +41,9 @@ call plug#begin()
     Plug 'leafgarland/typescript-vim'
     Plug 'peitalin/vim-jsx-typescript'
 
+    " Rust support
+    Plug 'rust-lang/rust.vim'
+
     " General syntax checker and formatter
     Plug 'dense-analysis/ale'
 
@@ -65,3 +68,25 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+
+
+" ████ Ale Config ████████████████████████████████████████████████████████████
+
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_enabled = 1
+let g:ale_completion_autoimport = 1
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \   'javascript': ['eslint'],
+    \   'typescript': ['eslint','tslint', 'xo'],
+    \   'css': ['stylelint', 'fecs'],
+    \   'rust': ['rustfmt'],
+    \}
+let g:ale_linters = {'rust': ['rls']}
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
