@@ -1,4 +1,4 @@
-" pyk's vim (c) 2022 
+" pyk's vim (c) 2022
 
 
 " ████ Colors Scheme █████████████████████████████████████████████████████████
@@ -9,7 +9,7 @@ set t_Co=256
 
 " ████ Basic config ██████████████████████████████████████████████████████████
 
-set encoding=utf8   
+set encoding=utf8
 set ffs=unix,dos,mac
 
 " Show line number and max width
@@ -24,6 +24,8 @@ set shiftwidth=4
 set smarttab
 set softtabstop=4
 set tabstop=4
+
+autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespaces
 
 
 filetype plugin on
