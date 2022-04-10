@@ -1,3 +1,6 @@
 # Ignore installed plugins
 plugged
 
+# Ignore vim swap files
+*.swp
+
