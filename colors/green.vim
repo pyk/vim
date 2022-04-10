@@ -24,7 +24,7 @@ hi TabLine      ctermfg=darkgreen  ctermbg=bg
 " Splitter
 hi StatusLine   ctermfg=black      ctermbg=green      term=none      cterm=none
 hi StatusLineNC ctermfg=black      ctermbg=darkgreen  term=none      cterm=none
-hi VertSplit    ctermfg=black      ctermbg=darkgreen  term=none      cterm=none
+hi VertSplit    ctermfg=lightgreen ctermbg=none       term=none      cterm=none
 
 " Popup menu
 hi Pmenu        ctermfg=lightgreen ctermbg=darkgreen
@@ -37,7 +37,7 @@ hi Special      ctermfg=lightgreen
 hi Identifier   ctermfg=green
 hi Statement    ctermfg=green
 hi PreProc      ctermfg=green
-hi Type         ctermfg=lightgreen      
+hi Type         ctermfg=lightgreen
 hi Underlined                                         term=underline cterm=underline
 hi Ignore                          ctermfg=bg
 hi Operator     ctermfg=lightgreen
@@ -65,3 +65,4 @@ hi link SpecialChar    Special
 hi link Delimiter      Special
 hi link SpecialComment Special
 hi link Debug          Special
+
