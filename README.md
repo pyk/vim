@@ -4,10 +4,14 @@ This is my vim setup.
 
 ## Setup
 
+Install [vim-plug](https://github.com/junegunn/vim-plug).
+
 Clone repo to download all the configurations:
 
     git clone git@github.com:pyk/vim.git
     cp vim/.vimrc ~/.vimrc
+
+Run `vim` and install all the plugins via `:PlugInstall`.
 
 
 ## Colors Scheme
