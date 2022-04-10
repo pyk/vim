@@ -31,3 +31,8 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespaces
 filetype plugin on
 filetype indent on
 
+" ████ Plugins  ██████████████████████████████████████████████████████████████
+call plug#begin()
+    " Solidity support
+    Plug 'tomlion/vim-solidity'
+call plug#end()
