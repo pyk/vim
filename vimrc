@@ -1,6 +1,5 @@
 " pyk's vim (c) 2022
 
-
 " ████ Colors Scheme █████████████████████████████████████████████████████████
 
 syntax on
@@ -44,6 +43,25 @@ call plug#begin()
 
     " General syntax checker and formatter
     Plug 'dense-analysis/ale'
+
+    " Airline
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
+" ████ Airline config  ███████████████████████████████████████████████████████
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_theme='minimalist'
+
+
+" ████ Split panes  ██████████████████████████████████████████████████████████
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
