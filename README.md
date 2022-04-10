@@ -10,8 +10,6 @@ Clone repo to download all the configurations:
 
     git clone git@github.com:pyk/vim.git ~/.vim
 
-Install [vim-plug](https://github.com/junegunn/vim-plug).
-
 Run `vim` and install all the plugins via `:PlugInstall`.
 
 
