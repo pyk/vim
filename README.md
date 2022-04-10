@@ -1,8 +1,8 @@
 # pyk's vim
 
-This is my vim setup.
+This is my vim + tmux setup.
 
-## Setup
+## Vim setup
 
 Remove existing `~/.vim` directory if any.
 
@@ -13,7 +13,7 @@ Clone repo to download all the configurations:
 Run `vim` and install all the plugins via `:PlugInstall`.
 
 
-## Colors Scheme
+### Colors Scheme
 
 Enable the colors cheme based on your mood on the `~/.vim/vimrc`.
 
@@ -23,7 +23,21 @@ For example:
     colorscheme green
 
 
-## Syntax checking & Formatting
+### Syntax checking & Formatting
 
 I use [ale](https://github.com/dense-analysis/ale) for this.
+
+It will auto-format files (ex: markdown, tsx) if `prettier` is installed on
+`node_modules`.
+
+
+## tmux
+
+Install `tmux` via `brew`:
+
+    brew install tmux
+
+Setup the global config `Ctrl+b` then type the following:
+
+    :set -g status off
 
