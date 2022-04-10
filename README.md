@@ -2,6 +2,8 @@
 
 This is my vim + tmux setup.
 
+![vim setup](./vim.png)
+
 ## Vim setup
 
 Remove existing `~/.vim` directory if any.
@@ -13,7 +15,7 @@ Clone repo to download all the configurations:
 Run `vim` and install all the plugins via `:PlugInstall`.
 
 
-### Colors Scheme
+### Colors scheme
 
 Enable the colors cheme based on your mood on the `~/.vim/vimrc`.
 
@@ -22,13 +24,15 @@ For example:
     syntax on
     colorscheme green
 
+### Language supports
 
-### Syntax checking & Formatting
+The following programming languages are supported out of the box:
 
-I use [ale](https://github.com/dense-analysis/ale) for this.
+1. Rust: You need to install `rls` and `rustfmt`.
+2. Soldity: You need to install [svm](https://github.com/roynalnaruto/svm-rs).
+3. Typescript (.ts and .tsx)
 
-It will auto-format files (ex: markdown, tsx) if `prettier` is installed on
-`node_modules`.
+Linting, Autocomplete and Autoformat are supported by [ale](https://github.com/dense-analysis/ale).
 
 
 ## tmux
@@ -40,4 +44,3 @@ Install `tmux` via `brew`:
 Setup the global config `Ctrl+b` then type the following:
 
     :set -g status off
-
