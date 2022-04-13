@@ -46,3 +46,4 @@ Create new file `~/.tmux.conf` then copy paste the following content:
     set -g status on
     set -g status-bg black
     set -g status-fg white
+    set -g mouse on
