@@ -17,7 +17,7 @@ hi LineNr       ctermfg=lightgreen
 hi Directory    ctermfg=lightgreen
 hi Folded       ctermfg=black      ctermbg=darkgreen
 hi ColorColumn                     ctermbg=233
-hi Error                           ctermbg=brown
+hi Error                           ctermbg=red
 hi CursorLine   ctermfg=black      ctermbg=green
 hi TabLine      ctermfg=darkgreen  ctermbg=bg
 hi SignColumn   ctermfg=darkgreen  ctermbg=bg
