@@ -47,3 +47,8 @@ Create new file `~/.tmux.conf` then copy paste the following content:
     set -g status-bg black
     set -g status-fg white
     set -g mouse on
+
+## Extra
+
+- [starship](https://starship.rs/)
+- [iTerm](https://iterm2.com/documentation/2.1/index.html) (with minimal theme)
