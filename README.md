@@ -29,7 +29,7 @@ For example:
 The following programming languages are supported out of the box:
 
 1. Rust: You need to install `rls` and `rustfmt`.
-2. Soldity: You need to install [svm](https://github.com/roynalnaruto/svm-rs).
+2. Soldity: You need to install [svm](https://github.com/pyk/svm-rs).
 3. Typescript (.ts and .tsx)
 
 Linting, Autocomplete and Autoformat are supported by [ale](https://github.com/dense-analysis/ale).
