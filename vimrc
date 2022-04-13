@@ -30,6 +30,15 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespaces
 filetype plugin on
 filetype indent on
 
+" Auto close brackets, quote, etc
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 
 " ████ Plugins  ██████████████████████████████████████████████████████████████
 
