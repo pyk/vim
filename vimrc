@@ -33,12 +33,17 @@ filetype indent on
 " Auto close brackets, quote, etc
 inoremap " ""<left>
 inoremap ' ''<left>
-inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
+" Highlight current line
+set cursorline
+
+set nobackup
+set nowb
+set noswapfile
 
 " ████ Plugins  ██████████████████████████████████████████████████████████████
 
