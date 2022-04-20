@@ -6,9 +6,6 @@ endif
 
 let colors_name = "green"
 
-" Remove underline
-hi clear CursorLine
-
 " Basics
 hi Normal       ctermfg=green      ctermbg=black
 hi ErrorMsg     ctermfg=white      ctermbg=red
@@ -21,8 +18,8 @@ hi Directory    ctermfg=lightgreen
 hi Folded       ctermfg=black      ctermbg=darkgreen
 hi ColorColumn                     ctermbg=233
 hi Error                           ctermbg=red
-hi CursorLine
-hi CursorLineNR ctermfg=white      ctermbg=darkgreen
+hi CursorLine                                         term=none      cterm=none
+hi CursorLineNR ctermfg=white      ctermbg=darkgreen  term=none      cterm=none
 hi TabLine      ctermfg=darkgreen  ctermbg=bg
 hi SignColumn   ctermfg=darkgreen  ctermbg=bg
 
