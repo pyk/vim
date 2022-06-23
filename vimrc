@@ -103,7 +103,9 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
 \   'css': ['prettier'],
 \   'json': ['prettier'],
+\   'markdown': ['prettier'],
 \}
 
