@@ -108,5 +108,7 @@ let g:ale_fixers = {
 \   'json': ['prettier'],
 \   'markdown': ['prettier'],
 \   'solidity': ['prettier'],
+\   'graphql': ['prettier'],
+\   'yaml': ['prettier'],
 \}
 
