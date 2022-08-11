@@ -105,5 +105,6 @@ let g:ale_fixers = {
 \   'typescript': ['prettier'],
 \   'css': ['prettier'],
 \   'json': ['prettier'],
+\   'solidity': ['prettier'],
 \}
 
