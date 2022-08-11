@@ -99,16 +99,3 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
-" Enable auto formatting
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'typescript': ['prettier'],
-\   'typescriptreact': ['prettier'],
-\   'css': ['prettier'],
-\   'json': ['prettier'],
-\   'markdown': ['prettier'],
-\   'solidity': ['prettier'],
-\   'graphql': ['prettier'],
-\   'yaml': ['prettier'],
-\}
-
