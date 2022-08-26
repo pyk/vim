@@ -58,6 +58,9 @@ call plug#begin()
     " Rust support
     Plug 'rust-lang/rust.vim'
 
+    " GraphQL support
+    Plug 'jparise/vim-graphql'
+
     " General syntax checker and formatter
     Plug 'dense-analysis/ale'
 
