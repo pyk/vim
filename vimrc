@@ -103,7 +103,7 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
-" yank to clipboard
+" yank to clipboard; this will support yank across iTerm panes
 if has("clipboard")
   set clipboard=unnamed " copy to the system clipboard
 endif
